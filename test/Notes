@@ -1,0 +1,23 @@
+  void getMessages() async {
+    QuerySnapshot querySnapshot = await _fireStore.collection('Messages').get();
+    //TODO: Get a Specific Filed in Documents
+    // final allData = querySnapshot.docs.map((e) => e.get('text')).toList();
+
+    //TODO: Get all Documents
+    final allData = querySnapshot.docs.map((e) => e.data()).toList();
+    print(allData);
+  }
+
+  void messageStream() async {
+    await for (var snapShot in _fireStore.collection('Messages').snapshots()) {
+      //todo: get new Messages and all in first time only
+      for (var message in snapShot.docChanges) {
+        print(message.doc.get('text'));
+      }
+      //todo: get all messages after every new message
+      // for(var message in snapShot.docs)
+      //   {
+      //     print(message.get('text'));
+      //   }
+    }
+  }

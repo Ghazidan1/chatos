@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "90414971986",
+    "project_id": "chatos-eb3ce",
+    "storage_bucket": "chatos-eb3ce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90414971986:android:a0a19f19ad3c77d6d1738b",
+        "android_client_info": {
+          "package_name": "com.ghazidan.chatos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "90414971986-v35o0lh90je93cro7o6tv1s3nd9p6sur.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRw5Bj2eHDtHUuQ5UhSSfY7TM-f-6sQtc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "90414971986-v35o0lh90je93cro7o6tv1s3nd9p6sur.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
